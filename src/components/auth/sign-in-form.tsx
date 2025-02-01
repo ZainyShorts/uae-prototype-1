@@ -55,7 +55,7 @@ export function SignInForm(): React.JSX.Element {
      router.push('/dashboard')
       const { error } = await authClient.signInWithPassword(values);
 
-      console.log(error) 
+      // console.log(error) 
 
       if (error) {
         setError('root', { type: 'server', message: error });
